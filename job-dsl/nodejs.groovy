@@ -4,13 +4,13 @@ job('NodeJS-demo example'){
         node / gitConfigName('AnhNH198')
         node / gitConfigEmail('AnhNH198@bizfly.academy')
     }
-triggers{
-    scm('H/6 * * * *')
-}
-wrappers{
-    nodejs('nodejs-7.10')
-}
-steps{
-    shell("npm install")
-}
+    triggers {
+        scm('H/6 * * * *')
+    }
+    wrappers {
+        nodejs('nodejs-7.10')
+    }
+    steps {
+        shell("npm install")
+    }
 }
