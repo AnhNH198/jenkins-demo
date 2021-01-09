@@ -11,6 +11,6 @@ wrappers{
     nodejs('nodejs-7.10')
 }
 steps{
-    shell(npm install)
+    shell("npm install")
 }
 }
