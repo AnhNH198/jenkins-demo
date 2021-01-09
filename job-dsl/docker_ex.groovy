@@ -14,6 +14,7 @@ job('Docker-dsl-example'){
     }
     steps {
         dockerBuildAndPublish {
+            dockerHostURI('tcp://103.56.156.20:4243') 
             repositoryName('boploi/job-dsl-docker-jenkins')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
